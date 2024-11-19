@@ -45,19 +45,15 @@ export default function Home({
           <div className="flex flex-row flex-nowrap items-center justify-center text-center text-3xl before:mr-5 before:h-[1px] before:max-w-xs before:flex-1 before:border-b-[1px] before:border-dashed before:border-b-gray-300 before:content-[''] after:ml-5 after:h-[1px] after:max-w-xs after:flex-1 after:border-b-[1px] after:border-dashed after:border-b-gray-300 after:content-[''] dark:before:border-b-gray-600 dark:after:border-b-gray-600">
             {title}
           </div>
-          <div className="mt-6 flex w-full max-w-screen-xl flex-grow animate-fade-up flex-wrap gap-5">
+          <div className="mt-6 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {links.map(({ title, description, demo, url }) => (
-              <div
+              <Card
                 key={title}
-                className="w-full sm:w-[calc(calc(100%-1.25rem)/2)] lg:w-[calc(calc(100%-2.5rem)/3)]"
-              >
-                <Card
-                  title={title}
-                  description={description}
-                  demo={demo}
-                  url={url}
-                />
-              </div>
+                title={title}
+                description={description}
+                demo={demo}
+                url={url}
+              />
             ))}
           </div>
         </div>
@@ -73,7 +69,7 @@ export default function Home({
       demo: (
         <AppStore className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
       ),
-      url: "https://apps.apple.com/developer/id1474622324",
+      url: "#",
     },
     {
       title: "Google Play",
@@ -81,7 +77,7 @@ export default function Home({
       demo: (
         <GooglePlay className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
       ),
-      url: "https://play.google.com/store/apps/dev?id=6147500812487654859",
+      url: "#",
     },
     {
       title: "Microsoft Store",
@@ -89,7 +85,7 @@ export default function Home({
       demo: (
         <MicrosoftStore className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
       ),
-      url: "https://apps.microsoft.com/search/publisher?name=Brago",
+      url: "#",
     },
     {
       title: "Amazon Appstore",
@@ -97,7 +93,7 @@ export default function Home({
       demo: (
         <AmazonAppStore className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
       ),
-      url: "https://www.amazon.com/s?i=mobile-apps&rh=p_4%3A%E9%9D%92%E5%B2%9B%E5%9B%A0%E6%96%AF%E7%A7%91%E7%BD%91%E7%BB%9C%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&search-type=ss",
+      url: "#",
     },
     {
       title: "Snap Store",
@@ -105,7 +101,7 @@ export default function Home({
       demo: (
         <SnapStore className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
       ),
-      url: "https://snapcraft.io/publisher/brago",
+      url: "#",
     },
     {
       title: "Flathub",
@@ -113,7 +109,7 @@ export default function Home({
       demo: (
         <Flathub className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
       ),
-      url: "https://flathub.org/apps/collection/developer/Brago/1",
+      url: "#",
     },
   ];
 
@@ -181,7 +177,6 @@ export default function Home({
           <Link
             className="flex min-w-32 max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800 dark:bg-black dark:text-white/80"
             href="support"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <RiCommunityLine className="h-6 w-6" />
