@@ -56,7 +56,7 @@ export default function Support({
       demo: (
         <FaGithub className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
       ),
-      url: "https://github.com/brago-inc/community/discussions",
+      url: "https://github.com/orgs/brago-inc/discussions",
       large: false,
     },
   ];
