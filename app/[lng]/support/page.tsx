@@ -47,7 +47,7 @@ export default function Support({
       demo: (
         <MdEmail className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
       ),
-      url: "mailto://contact@brago.cn",
+      url: "mailto:contact@brago.cn",
       large: false,
     },
     {
