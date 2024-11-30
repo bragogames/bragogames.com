@@ -2,9 +2,9 @@
 import Script from "next/script";
 import type { LngProps } from "@/types/i18next-lng";
 
-const CookieBanner = (props: LngProps) => {
-  const NEXT_PUBLIC_COOKIE_BANNER_ID = process.env.NEXT_PUBLIC_COOKIE_BANNER_ID;
+const NEXT_PUBLIC_COOKIE_BANNER_ID = process.env.NEXT_PUBLIC_COOKIE_BANNER_ID;
 
+const CookieYes = (props: LngProps) => {
   if (!NEXT_PUBLIC_COOKIE_BANNER_ID) return null;
 
   return (
@@ -17,4 +17,4 @@ const CookieBanner = (props: LngProps) => {
   );
 };
 
-export default CookieBanner;
+export default CookieYes;
