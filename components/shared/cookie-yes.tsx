@@ -8,12 +8,10 @@ const CookieYes = (props: LngProps) => {
   if (!NEXT_PUBLIC_COOKIE_BANNER_ID) return null;
 
   return (
-    <>
-      <Script
-        id="cookieyes"
-        src={`https://cdn-cookieyes.com/client_data/${NEXT_PUBLIC_COOKIE_BANNER_ID}/script.js`}
-      />
-    </>
+    <Script
+      id="cookieyes"
+      src={`https://cdn-cookieyes.com/client_data/${NEXT_PUBLIC_COOKIE_BANNER_ID}/script.js`}
+    />
   );
 };
 
