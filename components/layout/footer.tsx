@@ -66,7 +66,7 @@ export default function Footer(props: LngProps) {
       {["cn", "com_cn"].includes(cookie ?? "") ? (
         <span className="mt-2 flex flex-wrap items-center justify-center text-sm text-gray-500 dark:text-gray-400 sm:text-center">
           <a href="https://beian.miit.gov.cn/" target="_blank">
-            {cookie === "cn" ? "" : ""}
+            {cookie === "cn" ? "鲁ICP备18053123号-5" : "鲁ICP备18053123号-6"}
           </a>
         </span>
       ) : null}
