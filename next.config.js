@@ -13,7 +13,6 @@ const nextConfig = {
     remotePatterns: [
       { hostname: "brago.io" },
       { hostname: "lh3.googleusercontent.com" },
-      { hostname: "visitor-badge.laobi.icu" },
     ],
     unoptimized: true,
   },
