@@ -12,6 +12,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       { hostname: "brago.io" },
+      { hostname: "brago.cn" },
+      { hostname: "brago.com.cn" },
       { hostname: "lh3.googleusercontent.com" },
     ],
     unoptimized: true,
