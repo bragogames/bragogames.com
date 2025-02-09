@@ -1,5 +1,7 @@
 # websites
 
+[![Deploy](https://github.com/brago-inc/websites/actions/workflows/deploy.yml/badge.svg)](https://github.com/brago-inc/websites/actions/workflows/deploy.yml)
+
 ## Setup
 
 ```bash
