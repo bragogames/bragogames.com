@@ -75,11 +75,16 @@ jobs:
           # brago.com.cn
           echo "$BRAGO_COM_CERT_KEY" | base64 --decode > ./certs/brago.com.cn.key
           echo "$BRAGO_COM_CERT_PEM" | base64 --decode > ./certs/brago.com.cn.pem
+          # brago.io
+          echo "$BRAGO_IO_CERT_KEY" | base64 --decode > ./certs/brago.io.key
+          echo "$BRAGO_IO_CERT_PEM" | base64 --decode > ./certs/brago.io.pem
         env:
           BRAGO_CERT_KEY: ${{ secrets.BRAGO_CERT_KEY }}
           BRAGO_CERT_PEM: ${{ secrets.BRAGO_CERT_PEM }}
           BRAGO_COM_CERT_KEY: ${{ secrets.BRAGO_COM_CERT_KEY }}
           BRAGO_COM_CERT_PEM: ${{ secrets.BRAGO_COM_CERT_PEM }}
+          BRAGO_IO_CERT_KEY: ${{ secrets.BRAGO_IO_CERT_KEY }}
+          BRAGO_IO_CERT_PEM: ${{ secrets.BRAGO_IO_CERT_PEM }}
 
       - name: Docker build & push
         run: |
