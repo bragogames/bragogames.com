@@ -1,5 +1,6 @@
 # websites
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2e2693d7-a054-433a-ad0a-aa764bb4df96/deploy-status)](https://app.netlify.com/sites/brago-websites/deploys)
 [![Deploy](https://github.com/brago-inc/websites/actions/workflows/deploy.yml/badge.svg)](https://github.com/brago-inc/websites/actions/workflows/deploy.yml)
 [![Test](https://github.com/brago-inc/websites/actions/workflows/test.yml/badge.svg)](https://github.com/brago-inc/websites/actions/workflows/test.yml)
 
