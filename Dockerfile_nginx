@@ -1,7 +1,7 @@
 FROM nginx:1.26.2
 
 LABEL org.opencontainers.image.authors="kjxbyz <kjxbyz888@outlook.com>"
-LABEL org.opencontainers.image.source="https://github.com/brago-inc/sentinel"
+LABEL org.opencontainers.image.source="https://github.com/brago-inc/websites"
 LABEL org.opencontainers.image.description="This image is used to forward or redirect traffic to individual sites, allowing content to be delivered efficiently and easily."
 LABEL org.opencontainers.image.licenses=MIT
 
